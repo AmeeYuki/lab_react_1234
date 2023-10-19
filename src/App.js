@@ -5,6 +5,7 @@ import "./App.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import FilmList from "./components/FilmList";
+import ThemeProvider from "./components/Toggle";
 
 function App() {
   return (

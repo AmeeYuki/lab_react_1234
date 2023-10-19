@@ -14,7 +14,7 @@ function FilmList() {
         </h4>{" "}
         <hr />
         <Paper>
-          <div className="row">
+          <Row>
             {FilmData.map((film) => (
               <div className="col-md-6" key={film.id}>
                 <Card>
@@ -89,7 +89,7 @@ function FilmList() {
                 </div>
               </div>
             </Card>
-          </div>
+          </Row>
         </Paper>
       </Container>
     </div>

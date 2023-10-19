@@ -9,19 +9,22 @@ import {
   Toolbar,
   Tooltip,
   Typography,
+  colors,
 } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
 import { Button, Container, Navbar, NavItem } from "react-materialize";
 import { Link } from "react-router-dom";
 import { Margin, NavigateBeforeOutlined } from "@mui/icons-material";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/img/logo-film.png";
-// import DrawerMUI from "./DrawerMUI";
-const pages = ["Profile", "Account", "Dashboard", "Logout"];
+import { ThemeContext } from "./ThemeContext";
+import Toggle from "./Toggle";
 
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+// import DrawerMUI from "./DrawerMUI";
 
 function Navigation() {
+  const { theme, toggle, dark } = useContext(ThemeContext);
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -40,11 +43,23 @@ function Navigation() {
     setAnchorElUser(null);
   };
 
+  const linkStyle = {
+    color: "white", // Customize the color for the links
+    textDecoration: "none", // Remove underline
+    margin: "0 10px", // Add some spacing between links
+  };
+
   return (
     <div>
       <AppBar
         position="static"
-        sx={{ padding: "0 20px", backgroundColor: "black" }}
+        sx={{
+          padding: "0 20px",
+          backgroundColor: {
+            color: theme.color,
+            backgroundColor: theme.backgroundColor,
+          },
+        }}
       >
         <Toolbar disableGutters>
           <Typography
@@ -96,13 +111,19 @@ function Navigation() {
             >
               <ul className="navigation-ul-menu">
                 <li>
-                  <a href="#">Home</a>
+                  <a style={linkStyle} href="#">
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Film</a>
+                  <a style={linkStyle} href="#">
+                    Film
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a style={linkStyle} href="#">
+                    Contact
+                  </a>
                 </li>
               </ul>
             </Menu>
@@ -144,6 +165,21 @@ function Navigation() {
               </li>
             </ul>
           </Box>
+          <div style={{ position: "relative" }}>
+            <a
+              className="switch-mode"
+              href="#"
+              onClick={toggle}
+              style={{
+                backgroundColor: theme.backgroundColor,
+                color: theme.color,
+                outline: "none",
+              }}
+              data-testid="toggle-theme-btn"
+            >
+              <Toggle></Toggle>
+            </a>
+          </div>
         </Toolbar>
       </AppBar>
     </div>
