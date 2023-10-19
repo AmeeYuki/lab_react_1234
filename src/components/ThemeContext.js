@@ -5,11 +5,14 @@ const themes = {
   dark: {
     backgroundColor: " #616161",
     color: "white",
+    paperBackgroudColor: "#DADADA",
+
     navBackgroundColor: "#3D3D3D",
   },
   light: {
     backgroundColor: " ",
     color: "black",
+    paperBackgroudColor: "",
     navBackgroundColor: "#C8C8C8",
   },
 };

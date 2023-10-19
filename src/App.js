@@ -9,6 +9,7 @@ import FilmList from "./components/FilmList";
 import ThemeProvider from "./components/Toggle";
 import Contact from "./components/Contact";
 import Detail from "./components/Detail";
+import News from "./components/News";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<FilmList />}></Route>
         <Route path="/detail/:id" element={<Detail />}></Route>
+        <Route path="/news" element={<News />}></Route>
+
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
       <Footer></Footer>

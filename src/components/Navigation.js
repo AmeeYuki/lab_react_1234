@@ -148,7 +148,7 @@ function Navigation() {
           >
             <ul className="navigation-ul">
               <li>
-                <a style={linkStyle} href="#">
+                <a style={linkStyle} href="/">
                   Home
                 </a>
               </li>
@@ -158,7 +158,12 @@ function Navigation() {
                 </a>
               </li>
               <li>
-                <a style={linkStyle} href="#">
+                <a style={linkStyle} href="/news">
+                  News
+                </a>
+              </li>
+              <li>
+                <a style={linkStyle} href="/contact">
                   Contact
                 </a>
               </li>
