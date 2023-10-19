@@ -4,6 +4,7 @@ import { FilmData } from "../shared/ListOfFilms";
 import { Row } from "react-materialize";
 import { useState } from "react";
 import { ThemeContext } from "./ThemeContext";
+import { Link } from "react-router-dom";
 
 function FilmList() {
   const [film, setFilm] = useState([]);
@@ -44,8 +45,8 @@ function FilmList() {
                           <b>Nation</b>: {film.nation}
                         </p>
                       </div>
-                      <button
-                        className="btn btn-success"
+                      <div
+                        className=""
                         onClick={() => {
                           setFilm(film);
                         }}
@@ -55,9 +56,18 @@ function FilmList() {
                           href="#popup1"
                           id="openPopUp"
                         >
-                          <b>View Detail</b>
+                          <button className="btn btn-dark">
+                            <b>View Detail</b>
+                          </button>
                         </a>
-                      </button>
+                      </div>
+                      <Link to={`detail/${film.id}`}>
+                        <p>
+                          <button className="mt-3 btn btn-dark">
+                            View more
+                          </button>
+                        </p>
+                      </Link>
                     </div>
                   </Row>
                 </Card>

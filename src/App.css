@@ -35,9 +35,9 @@
   margin: 10px;
 }
 
-.navigation-ul-menu li a {
-  /* color: #000000; */
-}
+/* .navigation-ul-menu li a {
+   color: #000000; 
+} */
 
 .footer-styles {
   display: flex;
@@ -100,4 +100,8 @@
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+
+.img-detail img {
+  width: 100%;
 }
