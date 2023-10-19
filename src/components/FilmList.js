@@ -1,23 +1,29 @@
-import React from "react";
-import { Paper, Container, Card } from "@mui/material";
+import React, { useContext } from "react";
+import { Paper, Container, Card, colors } from "@mui/material";
 import { FilmData } from "../shared/ListOfFilms";
 import { Row } from "react-materialize";
 import { useState } from "react";
+import { ThemeContext } from "./ThemeContext";
 
 function FilmList() {
   const [film, setFilm] = useState([]);
+  const { theme, toggle, dark } = useContext(ThemeContext);
+  const themeStyle = {
+    backgroundColor: theme.backgroundColor,
+    color: theme.color,
+  };
   return (
-    <div className="mt-4 mb-4">
+    <div className="pt-4 pb-4" style={themeStyle}>
       <Container>
         <h4>
           <b>List of Film</b>:
         </h4>{" "}
         <hr />
-        <Paper>
+        <Paper style={themeStyle}>
           <Row>
             {FilmData.map((film) => (
               <div className="col-md-6" key={film.id}>
-                <Card>
+                <Card style={themeStyle}>
                   <Row>
                     <div className="col-5 col-md-7">
                       <img

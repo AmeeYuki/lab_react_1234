@@ -13,7 +13,10 @@
   /* color: #ffffff; */
   display: flex;
   align-items: center;
+  font-size: 20px;
   margin-top: 15px;
+  margin-left: 20px;
+  font-weight: bold;
 }
 .nav-logo {
   height: 50px;
@@ -40,6 +43,7 @@
   display: flex;
   bottom: 0;
   width: 100%;
+  background-color: #3d3d3d;
 }
 
 .img-film {

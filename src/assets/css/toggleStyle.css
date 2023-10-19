@@ -1,23 +1,29 @@
 .toggle {
-  width: 100px;
-  height: 50px;
-  background-color: #ccc;
+  width: 80px;
+  height: 40px;
+  background-color: #898989;
   padding: 5px;
   border-radius: 100rem;
   cursor: pointer;
   transition: all 0.2s linear;
 }
+.icon {
+  position: absolute;
+  left: -30px;
+  top: 8px;
+  transition: all 0.2s linear;
+}
 
 .spinner {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: white;
   border-radius: 100rem;
   transition: all 0.2s linear;
 }
 
 .toggle.active {
-  background-color: aqua;
+  background-color: rgb(90, 90, 90);
 }
 
 /* .toggle.active {
@@ -25,16 +31,5 @@
 } */
 
 .spinner.active {
-  transform: translate(50px);
-}
-
-.toggle-control {
-  margin: 30px;
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-}
-
-.toggle-control > * {
-  cursor: pointer;
+  transform: translate(40px);
 }

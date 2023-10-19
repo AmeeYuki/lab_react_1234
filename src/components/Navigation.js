@@ -44,9 +44,8 @@ function Navigation() {
   };
 
   const linkStyle = {
-    color: "white", // Customize the color for the links
+    color: theme.color, // Customize the color for the links
     textDecoration: "none", // Remove underline
-    margin: "0 10px", // Add some spacing between links
   };
 
   return (
@@ -57,7 +56,7 @@ function Navigation() {
           padding: "0 20px",
           backgroundColor: {
             color: theme.color,
-            backgroundColor: theme.backgroundColor,
+            backgroundColor: theme.navBackgroundColor,
           },
         }}
       >
@@ -111,19 +110,13 @@ function Navigation() {
             >
               <ul className="navigation-ul-menu">
                 <li>
-                  <a style={linkStyle} href="#">
-                    Home
-                  </a>
+                  <a href="#">Home</a>
                 </li>
                 <li>
-                  <a style={linkStyle} href="#">
-                    Film
-                  </a>
+                  <a href="#">Film</a>
                 </li>
                 <li>
-                  <a style={linkStyle} href="#">
-                    Contact
-                  </a>
+                  <a href="#">Contact</a>
                 </li>
               </ul>
             </Menu>
@@ -155,13 +148,19 @@ function Navigation() {
           >
             <ul className="navigation-ul">
               <li>
-                <a href="#">Home</a>
+                <a style={linkStyle} href="#">
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#">Film</a>
+                <a style={linkStyle} href="#">
+                  Film
+                </a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a style={linkStyle} href="#">
+                  Contact
+                </a>
               </li>
             </ul>
           </Box>

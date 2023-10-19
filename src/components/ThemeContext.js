@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 
 const themes = {
   dark: {
-    backgroundColor: "black",
+    backgroundColor: " #616161",
     color: "white",
+    navBackgroundColor: "#3D3D3D",
   },
   light: {
-    backgroundColor: "white",
+    backgroundColor: " ",
     color: "black",
+    navBackgroundColor: "#C8C8C8",
   },
 };
 
