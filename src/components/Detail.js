@@ -19,12 +19,20 @@ export default function Detail() {
 
   return (
     <div style={themeStyle}>
-      <div className="container pt-4 pb-4" style={themeStyle}>
+      <div className="container pt-5 pb-5" style={themeStyle}>
         <div className="row">
-          <div className="col-md-4 img-detail">
-            <img src={film.image} alt="" />
+          <div className="video-detail">
+            <iframe
+              width="560"
+              height="315"
+              src={film.video}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div className="col-md-8">
+          <div>
             <h4>
               <b>{film.title}</b>
             </h4>

@@ -153,8 +153,8 @@ function Navigation() {
                 </a>
               </li>
               <li>
-                <a style={linkStyle} href="#">
-                  Film
+                <a style={linkStyle} href="/about">
+                  About
                 </a>
               </li>
               <li>

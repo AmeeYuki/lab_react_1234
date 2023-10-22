@@ -17,6 +17,7 @@ export const FilmData = [
     year: "1977",
     nation: "JAPAN",
     info: "Dragon Ball is a Japanese media franchise created by Akira Toriyama in 1984. The initial manga, written and illustrated by Toriyama, was serialized in Weekly Shōnen Jump from 1984 to 1995, with the 519 individual chapters collected into 42 tankōbon volumes by its publisher Shueisha.",
+    video: "https://www.youtube.com/embed/CYcrmsdZuyw?si=tEhPB18b6MVbJiLb",
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ export const FilmData = [
     year: "2009",
     nation: "USA",
     info: "The life of Laura, a simple sales director, changes when she takes a trip to Sicily but gets kidnapped by Massimo, a mafia member. Massimo keeps her hostage for 365 days to make her fall for him.",
+    video: "https://www.youtube.com/embed/iXdw5wYI4cY?si=2EIx0k4mmJYg6lL8",
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ export const FilmData = [
     year: "2003",
     nation: "New Zealand",
     info: "Chú hề ma quái là một bộ phim kinh dị siêu nhiên Mỹ ra mắt năm 2017 của đạo diễn Andy Muschietti. Đây là phần đầu tiên trong kế hoạch sản xuất loạt phim It hai phần dựa trên cuốn tiểu thuyết cùng tên của nhà văn Stephen King. Nhóm biên kịch của phim gồm có Chase Palmer, Cary Fukunaga và Gary Dauberman.",
+    video: "https://www.youtube.com/embed/FnCdOQsX5kc?si=-XC_h1Q1orHVoH6D",
   },
   {
     id: 4,
@@ -41,6 +44,7 @@ export const FilmData = [
     year: "1997",
     nation: "USA",
     info: "Star Wars is an American epic space opera media franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop culture phenomenon.",
+    video: "https://www.youtube.com/embed/sGbxmsDFVnE?si=UNev4HZNmzVQTVRq",
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ export const FilmData = [
     year: "1993",
     nation: "USA",
     info: "Thám tử lừng danh Conan: Tàu ngầm sắt màu đen là phim điện ảnh anime trinh thám năm 2023 của Nhật Bản dựa trên nguyên tác là bộ manga Thám tử lừng danh Conan của họa sĩ Aoyama Gōshō. Phim do Yuzuru Tachikawa làm đạo diễn, dựa trên phần kịch bản do Takeharu Sakurai chấp bút.",
+    video: "https://www.youtube.com/embed/FXgdEb4kPR4?si=oV6zcSfow3mvNtHD",
   },
   {
     id: 6,
@@ -57,6 +62,7 @@ export const FilmData = [
     year: "2010",
     nation: "USA",
     info: "Đất phương Nam là một bộ phim ngắn tập chính kịch phiêu lưu năm 1997 do Nguyễn Vinh Sơn làm đạo diễn kiêm viết kịch bản. Bộ phim dựa trên tiểu thuyết Đất rừng phương Nam của nhà văn Đoàn Giỏi, kể về hành trình tìm cha của một cậu bé ở vùng miền Tây Nam Bộ",
+    video: "https://www.youtube.com/embed/DZ0xazNLx30?si=K50wuBmpsMCjNwZo",
   },
   {
     id: 7,
@@ -65,6 +71,7 @@ export const FilmData = [
     year: "2008",
     nation: "USA",
     info: "Doraemon is a fictional character in the Japanese manga and anime series of the same name created by Fujiko F. Fujio. Doraemon is a male robotic earless cat that travels back in time from the 22nd century to aid a preteen boy named Nobita.",
+    video: "https://www.youtube.com/embed/bUTfUVLP_Zk?si=oadGU9wH3NaN1AVs",
   },
   {
     id: 8,
@@ -73,6 +80,7 @@ export const FilmData = [
     year: "1994",
     nation: "USA",
     info: "Mười: Lời nguyền trở lại là phim điện ảnh kinh dị Việt Nam, ra mắt năm 2022. Phim do Hằng Trịnh đạo diễn, nhà sản xuất là hãng Silver Moonlight Entertainment. Dàn diễn viên chính trong phim gồm có: Chi Pu, Rima Thanh Vy, Hồng Ánh, Bình Minh, Anh Thư. Đây cũng là phần hai của tác phẩm cùng tên, ra mắt năm 2007.",
+    video: "https://www.youtube.com/embed/g2kCEd39aJw?si=a0eGXZAn71bp1En3",
   },
   {
     id: 9,
@@ -81,6 +89,7 @@ export const FilmData = [
     year: "1994",
     nation: "USA",
     info: "One Piece Film: Red là bộ phim hoạt hình anime của Nhật Bản thuộc thể loại kỳ ảo, hành động-phiêu lưu được sản xuất bởi Toei Animation. Đây là phần phim thứ mười lăm trong loạt phim điện ảnh của One Piece, dựa trên bộ truyện manga nổi tiếng cùng tên của tác giả Eiichiro Oda.",
+    video: "https://www.youtube.com/embed/AmTUaFdTETc?si=rGbQYA0Ng___H7jH",
   },
   {
     id: 10,
@@ -89,5 +98,6 @@ export const FilmData = [
     year: "1992",
     nation: "Japan",
     info: "Sailor Moon is a Japanese manga series written and illustrated by Naoko Takeuchi. It was originally serialized in Kodansha's shōjo manga magazine Nakayoshi from 1991 to 1997; the 52 individual chapters were published in 18 volumes.",
+    video: "https://www.youtube.com/embed/XDnKDYpvEgo?si=mamyti3rO_qatjeC",
   },
 ];

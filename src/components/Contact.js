@@ -10,12 +10,18 @@ import {
 import { ThemeContext } from "./ThemeContext";
 
 function Contact() {
+  const { theme, toggle, dark } = useContext(ThemeContext);
+
+  const themeStyle = {
+    backgroundColor: theme.backgroundColor,
+    color: theme.color,
+  };
   return (
-    <div className="pt-4 pb-4">
+    <div className="pt-4 pb-4" style={themeStyle}>
       <Container>
         <Grid container spacing={10}>
           <Grid item xs={4}>
-            <Paper elevation={3}>
+            <Paper elevation={3} style={themeStyle}>
               <Typography variant="h6">Contact Information</Typography>
               <div>
                 <Typography variant="subtitle1">Name: Your Name</Typography>

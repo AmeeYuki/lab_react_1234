@@ -10,6 +10,7 @@ import ThemeProvider from "./components/Toggle";
 import Contact from "./components/Contact";
 import Detail from "./components/Detail";
 import News from "./components/News";
+import About from "./components/About";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <Navigation></Navigation>
       <Routes>
         <Route path="/" element={<FilmList />}></Route>
+        <Route path="/about" element={<About />}></Route>
+
         <Route path="/detail/:id" element={<Detail />}></Route>
         <Route path="/news" element={<News />}></Route>
 
